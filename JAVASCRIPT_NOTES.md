@@ -496,7 +496,11 @@ arr.find(x => x > 3);  // 4 (first element matching condition)
 let doubled = arr.map(x => x * 2);     // [2,4,6,8,10]
 let evens = arr.filter(x => x % 2 === 0); // [2,4]
 let sum = arr.reduce((a, b) => a + b, 0); // 15
-
+let numbers = [1, 2, 3, 4, 5];
+numbers.forEach((value, index) => {
+    numbers[index] = numbers[index] * 2
+});
+console.log(numbers)
 // Other methods
 arr.slice(1, 3);       // [2, 3] (copy portion, doesn't modify)
 arr.splice(1, 2);      // Remove 2 elements starting at index 1
@@ -1608,3 +1612,4 @@ const price2 = '$' + (200).toFixed(2);
 ---
 
 **Happy Learning! Remember: Consistency is key. Practice regularly and build projects to master JavaScript.** 🚀
+
